@@ -1,3 +1,8 @@
-import steamlit
+import streamlit
 
-steamlit.title('Moin zusammen')
+streamlit.title('Moin zusammen')
+streamlit.text('sonstiges')
+
+streamlit.text('sonstiges')
+streamlit.text('sonstiges')
+streamlit.text('sonstiges')

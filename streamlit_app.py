@@ -32,4 +32,7 @@ my_cur = my_cnx.cursor()
 my_cur.execute("SELECT * FROM FRUIT_LOAD_LIST")
 my_data_rows = my_cur.fetchall()
 streamlit.text("The fruit load list contains:")
+newfruit = streamlit.text_input('What fruit would you like information about?','')
+my_cur.execute("INSERT INTO FRUIT_LOAD_LIST AS SELECT '"+newfruit+"'")
 streamlit.dataframe(my_data_rows)
+

@@ -33,6 +33,6 @@ my_cur.execute("SELECT * FROM FRUIT_LOAD_LIST")
 my_data_rows = my_cur.fetchall()
 streamlit.text("The fruit load list contains:")
 newfruit = streamlit.text_input('What fruit would you like information about?','')
-my_cur.execute("INSERT INTO FRUIT_LOAD_LIST VALUES('"+newfruit+"')")
+my_cur.execute("INSERT INTO FRUIT_LOAD_LIST VALUES('from streamlit')")
 streamlit.dataframe(my_data_rows)
 
